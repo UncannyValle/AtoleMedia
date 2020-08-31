@@ -32,18 +32,20 @@ const GlobalStyle = createGlobalStyle`
     background-color: #3B2D60;
   }
   main{
-    max-width: 1068px;  
+    max-width: 1068px; 
+    text-align:center;
+    margin: 0 auto; 
   }
   h1{
     font-family: continuo, sans-serif;
-    font-size: 5rem;
-     color: #FFFFFF;
+    font-size: 10rem;
+     color: #7FF2F8;
 
   }
   h2{
     font-family: continuo, sans-serif;
     font-size: 2rem;
-    color: #2c26ff;
+     color: #7FF2F8;
   }
   a {
     text-decoration: none ;
@@ -58,6 +60,7 @@ const GlobalStyle = createGlobalStyle`
 const Background = styled.img`
   width: 100vw;
   bottom: 0;
+  height: 90vh;
   position: fixed;
   overflow: hidden;
   z-index: -10;

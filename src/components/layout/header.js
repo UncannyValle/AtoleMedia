@@ -8,9 +8,12 @@ const HeaderWrapper = styled.header`
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   color: #7ff2f8;
   font-size: 2rem;
+  position: fixed;
+  background-color: #3b2d60;
+
   ul {
     display: flex;
     flex-direction: row;
