@@ -32,6 +32,7 @@ function SEO({ description, lang, meta, title, image }) {
 
   return (
     <Helmet
+     
       htmlAttributes={{
         lang,
       }}
@@ -79,7 +80,10 @@ function SEO({ description, lang, meta, title, image }) {
           content: metaImage,
         },
       ].concat(meta)}
-    />
+    >
+    <link rel="stylesheet" href="https://use.typekit.net/wbi1epd.css" />
+
+</Helmet>
   )
 }
 

@@ -14,7 +14,7 @@ import reset from "styled-reset"
 import lines from "../../images/background.jpg"
 
 const GlobalStyle = createGlobalStyle`
- @import url("https://use.typekit.net/wbi1epd.css");
+ ${"" /* @import url("https://use.typekit.net/wbi1epd.css"); */}
 
   ${reset}
   *, *:before, *:after {
@@ -44,8 +44,18 @@ const GlobalStyle = createGlobalStyle`
   }
   h2{
     font-family: continuo, sans-serif;
-    font-size: 2rem;
-     color: #7FF2F8;
+    font-size: 6rem;
+    color: #7FF2F8;
+  }
+  h3{
+     font-family: pinecone-mvb, sans-serif;
+     font-size: 2.5rem;
+  }
+  h4 {
+    font-family: pinecone-mvb, sans-serif;
+    font-size: 1.5rem;
+    color: #7FF2F8;
+
   }
   a {
     text-decoration: none ;
@@ -55,6 +65,11 @@ const GlobalStyle = createGlobalStyle`
  ul{
    margin: 0;
    padding:0;
+ }
+ p {
+   text-align: justify;
+   font-size: 20px;
+   line-height:30px;
  }
 `
 const Background = styled.img`
