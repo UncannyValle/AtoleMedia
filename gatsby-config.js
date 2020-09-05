@@ -3,8 +3,8 @@ module.exports = {
     title: `Atole Media`,
     description: `Take a sip of creativity. Movie, videogame reviews with a dash of art sprinkled in!`,
     author: `@theuncannyvalle`,
-    image: `images/Atole-card.jpg`,
-    url: `https://atolemedia.com`,
+    // image: `images/Atole-card.jpg`,
+    // url: `https://atolemedia.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -17,6 +17,8 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-netlify-cms`,
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -38,16 +40,10 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
-    {
-      resolve: "gatsby-plugin-react-svg",
-      options: {
-        rule: {
-          include: /assets/,
-        },
-      },
-    },
+    `gatsby-plugin-netlify-cms`,
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-} 
+}

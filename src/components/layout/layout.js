@@ -50,6 +50,8 @@ const GlobalStyle = createGlobalStyle`
   h3{
      font-family: pinecone-mvb, sans-serif;
      font-size: 2.5rem;
+     color: #7FF2F8;
+
   }
   h4 {
     font-family: pinecone-mvb, sans-serif;

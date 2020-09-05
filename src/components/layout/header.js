@@ -21,7 +21,7 @@ const HeaderWrapper = styled.header`
     width: 45vw;
   }
   .cup {
-    height: 4rem;
+    height: 5rem;
   }
 `
 const Search = styled.button`

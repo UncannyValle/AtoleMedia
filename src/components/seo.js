@@ -19,8 +19,7 @@ function SEO({ description, lang, meta, title, image }) {
             title
             description
             author
-            url
-            image
+           
           }
         }
       }
@@ -28,11 +27,10 @@ function SEO({ description, lang, meta, title, image }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const metaImage = image || site.siteMetadata.image
+  // const metaImage = `${url}${image || defaultImage}`
 
   return (
     <Helmet
-     
       htmlAttributes={{
         lang,
       }}
@@ -51,10 +49,10 @@ function SEO({ description, lang, meta, title, image }) {
           property: `og:description`,
           content: metaDescription,
         },
-        {
-          property: `og:image`,
-          content: metaImage,
-        },
+        // {
+        //   property: `og:image`,
+        //   content: metaImage,
+        // },
         {
           property: `og:type`,
           content: `website`,
@@ -75,15 +73,14 @@ function SEO({ description, lang, meta, title, image }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-        {
-          property: `twitter:image`,
-          content: metaImage,
-        },
+        // {
+        //   property: `twitter:image`,
+        //   content: metaImage,
+        // },
       ].concat(meta)}
     >
-    <link rel="stylesheet" href="https://use.typekit.net/wbi1epd.css" />
-
-</Helmet>
+      <link rel="stylesheet" href="https://use.typekit.net/wbi1epd.css" />
+    </Helmet>
   )
 }
 

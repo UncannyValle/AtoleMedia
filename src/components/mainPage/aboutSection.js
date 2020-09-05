@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 
 const AboutWrapper = styled.section`
   width: 100%;
-  z-index: -10;
+  z-index: -5;
 `
 const Bio = styled.div`
   display: flex;
@@ -31,6 +31,7 @@ const Selfie = styled(Img)`
   width: 30%;
   border-radius: 50%;
   z-index: -5;
+  overflow: visible;
 `
 const AboutSection = () => {
   const data = useStaticQuery(graphql`
