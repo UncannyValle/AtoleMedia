@@ -15,10 +15,10 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+   
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify-cms`,
-
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -40,7 +40,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-netlify-cms`,
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
