@@ -1,9 +1,8 @@
 backend:
   name: github
   repo: UncannyValle/AtoleMedia
-
 media_folder: static/assets
-public_folder: assets
+public_folder: /assets
 collections:
   - name: blog
     label: Blog
