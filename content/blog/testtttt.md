@@ -2,7 +2,7 @@
 path: the-end-of-the-world
 date: 2020-09-08T17:11:23.604Z
 title: It Truly is the F***ing End
-description: its  a test!
+description: A review of the second season of The End of the F***ing World
 image: /assets/teotfw-poster-web-779x1024.png
 ---
 Just saw the last season for The End of the F\*\**ing World and it was a fitting end to a dark and emotionally detached series that gave me my share of awkward laughs. The show could have been a dull second note after the amazing first season, that although ends abruptly, ends in a realistic and appropriate tone.
