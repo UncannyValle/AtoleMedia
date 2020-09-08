@@ -2,8 +2,13 @@
 path: the-end-of-the-fucking-world
 date: 9/7/2020
 title: It Truly is the F***ing End
+<<<<<<< HEAD
 description: A review of the second and last season of a really weird teen romance.
 image: assets/teotfw-poster-web-779x1024.png
+=======
+description: A review of the second and last season of a realy weird teen romance.
+image: assets/gwtw.jpg
+>>>>>>> d1f8c39a581911184c96b480260593ccde71d448
 ---
 The first season demonstrated a world in which kids are not heard are misunderstood. I mean, these teenagers can’t even understand themselves and they are screaming and rebelling against society in an attempt to to make sense of their world. And the moment they seem to get the handle on things, life yanks them back to reality, and it ends.
 
