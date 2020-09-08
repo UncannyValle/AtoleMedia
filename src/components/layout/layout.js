@@ -12,6 +12,7 @@ import styled from "styled-components"
 import Header from "./header"
 import reset from "styled-reset"
 import lines from "../../images/background.jpg"
+import Footer from "./footer"
 
 const GlobalStyle = createGlobalStyle`
  ${"" /* @import url("https://use.typekit.net/wbi1epd.css"); */}
@@ -34,7 +35,7 @@ const GlobalStyle = createGlobalStyle`
   main{
     max-width: 1068px; 
     text-align:center;
-    margin: 0 auto; 
+    margin: 7rem auto 0; 
   }
   h1{
     font-family: continuo, sans-serif;
@@ -90,11 +91,7 @@ const Layout = ({ children }) => {
       <Header />
 
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+      <Footer />
     </>
   )
 }

@@ -3,6 +3,7 @@ import React from "react"
 import styled from "styled-components"
 import cup from "../../images/home-icon.png"
 import lupa from "../../images/Icon material-search@2x.png"
+
 const HeaderWrapper = styled.header`
   display: flex;
   flex-direction: row;
@@ -13,7 +14,8 @@ const HeaderWrapper = styled.header`
   font-size: 2rem;
   position: fixed;
   background-color: #3b2d60;
-
+  top: 0;
+  z-index: 100;
   ul {
     display: flex;
     flex-direction: row;
