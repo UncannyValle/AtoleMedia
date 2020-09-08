@@ -28,7 +28,8 @@ export const BlogPostTemplateQuery = graphql`
       frontmatter {
         title
         description
-        image {
+        image 
+        {
           childImageSharp {
             fixed(width: 200) {
               ...GatsbyImageSharpFixed

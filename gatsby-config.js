@@ -12,6 +12,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-styled-components`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -24,6 +25,13 @@ module.exports = {
       options: {
         name: `markdown-pages`,
         path: `${__dirname}/content/blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-images`,
+        path: `${__dirname}/static/assets`,
       },
     },
     {
@@ -47,17 +55,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-netlify-cms-paths`,
       options: {
-        plugins: [
-          {
-            resolve: `gatsby-plugin-netlify-cms-paths`,
-            options: {
-              // Path to your Netlify CMS config file
-              cmsConfig: `/static/admin/config.yml`,
-            },
-          },
-        ],
+        // Path to your Netlify CMS config file
+        cmsConfig: `/static/admin/config.yml`,
       },
     },
 
