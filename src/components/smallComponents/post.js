@@ -4,18 +4,25 @@ import Img from "gatsby-image"
 import { Link } from "gatsby"
 
 const PostWrapper = styled(Link)`
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  transition: all 200ms ease-in;
+
   .image {
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
+    box-shadow: 0 3px 3px 0 #f26de4;
+    transition: all 200ms ease-in;
   }
   .text {
     display: inline-flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 65%;
+    transition: all 200ms ease-in;
   }
 
   .title {
@@ -30,17 +37,29 @@ const PostWrapper = styled(Link)`
     padding: 1rem;
     border-radius: 15px;
     text-align: right;
+    box-shadow: 0 3px 3px 0 #f26de4;
+    transition: all 200ms ease-in;
   }
   .content {
     background-color: white;
     color: black;
     padding: 1.5rem;
     border-radius: 15px;
-    
+    box-shadow: 0 3px 3px 0 #f26de4;
+    transition: all 200ms ease-in;
   }
   .info {
     display: flex;
     justify-content: space-around;
+  }
+  &:hover .image {
+    box-shadow: 0 14px 28px #f26de4, 0 10px 10px #f26de4;
+  }
+  &:hover .content {
+    box-shadow: 0 14px 28px #f26de4, 0 10px 10px #f26de4;
+  }
+  &:hover .title {
+    box-shadow: 0 14px 28px #f26de4, 0 10px 10px #f26de4;
   }
 `
 const Post = props => (

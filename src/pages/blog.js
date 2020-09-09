@@ -101,15 +101,15 @@ const Blog = () => {
       <SEO title="Blog" />
       <h1>The Blog</h1>
       <Genres>
-        <ImageWrapper>
+        <ImageWrapper to="/blogArt">
           <Img fluid={data.art.childImageSharp.fluid} className="image" />
           <h2 className="hover-text">Art</h2>
         </ImageWrapper>
-        <ImageWrapper>
+        <ImageWrapper to="/blogMovies">
           <Img fluid={data.movies.childImageSharp.fluid} className="image" />
           <h2 className="hover-text">Movies</h2>
         </ImageWrapper>
-        <ImageWrapper>
+        <ImageWrapper to="/blogGames">
           <Img fluid={data.games.childImageSharp.fluid} className="image" />
           <h2 className="hover-text">Games</h2>
         </ImageWrapper>
