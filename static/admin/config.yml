@@ -11,6 +11,8 @@ collections:
     fields:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
+      - { name: author, label: Author }
+      - { name: genre, label: Genre }
       - { name: title, label: Title }
       - { name: description, label: Description }
       - { name: image, label: Image, widget: image }

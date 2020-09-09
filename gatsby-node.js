@@ -25,31 +25,6 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {slug: node.frontmatter.path}
     })
   })
-  // const { data } = await getPageData(graphql)
-  // data.blogPosts.edges.forEach(({ node }) => {
-  //   const { path } = node.fields
-  //   actions.createPage({
-  //     path: `/blog${path}`,
-  //     component: path.resolve("./src/components/templates/BlogPost.js"),
-  //     context: { slug: path },
-  //   })
-  // })
+  
 }
 
-//Here we are going to fetch the data from graphQL in an async function
-
-// async function getPageData(graphql) {
-//   return await graphql(`
-//     {
-//       blogPosts: allMarkdownRemark {
-//         edges {
-//           node {
-//             frontmatter {
-//               path
-//             }
-//           }
-//         }
-//       }
-//     }
-//   `)
-// }

@@ -35,17 +35,17 @@ const GlobalStyle = createGlobalStyle`
   main{
     max-width: 1068px; 
     text-align:center;
-    margin: 7rem auto 0; 
+    margin: 6rem auto 0; 
   }
   h1{
     font-family: continuo, sans-serif;
-    font-size: 10rem;
+    font-size: 7rem;
      color: #7FF2F8;
 
   }
   h2{
     font-family: continuo, sans-serif;
-    font-size: 6rem;
+    font-size: 5rem;
     color: #7FF2F8;
   }
   h3{
@@ -62,9 +62,12 @@ const GlobalStyle = createGlobalStyle`
   }
   a {
     text-decoration: none ;
-    color:black;
+    color:#7FF2F8;
     font-family: costa, sans-serif;
  }  
+  a:hover {
+   cursor:pointer;
+ }
  ul{
    margin: 0;
    padding:0;

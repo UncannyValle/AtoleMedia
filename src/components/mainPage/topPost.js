@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import postImg from "../../images/GWTW.jpg"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 
@@ -17,7 +16,7 @@ const Image = styled(Img)`
   height: 250px;
 `
 const TopPost = props => (
-  <TopPostWrapper key={props.key} to={props.path}>
+  <TopPostWrapper key={props.key} to={`blog/${props.path}`}>
     <Image fluid={props.image} />
     <h4>{props.title}</h4>
     <span>{props.date}</span>

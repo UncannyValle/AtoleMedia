@@ -45,7 +45,7 @@ const Search = styled.button`
 const Header = () => (
   <HeaderWrapper>
     <ul>
-      <li>Blog</li>
+      <li><Link to="/blog">Blog</Link></li>
       <li>Store</li>
     </ul>
     <Link to="/">

@@ -17,7 +17,7 @@ const TopPostsSection = () => {
         edges {
           node {
             frontmatter {
-              date
+              date(formatString: "M/ D/ YY")
               description
               title
               path

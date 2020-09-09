@@ -52,6 +52,7 @@ const BlogPost = ({ data }) => {
           className="content"
           dangerouslySetInnerHTML={{ __html: post.html }}
         ></div>
+      
       </PostWrapper>
     </Layout>
   )
