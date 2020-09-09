@@ -61,10 +61,7 @@ export default BlogPost
 
 export const BlogPostTemplateQuery = graphql`
   query BlogPostTemplateQuery($slug: String) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      fields {
-        slug
-      }
+    markdownRemark(frontmatter: { path: { eq: $slug } }) {
       frontmatter {
         title
         description
