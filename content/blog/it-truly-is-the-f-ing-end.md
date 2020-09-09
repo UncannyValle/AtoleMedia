@@ -1,6 +1,8 @@
 ---
 path: the-end-of-the-world2
 date: 2020-09-09T00:48:15.118Z
+author: Julian Valle
+genre: Movies
 title: It Truly is the F***ing End
 description: A review of the second season of The End of the F***ing World
 image: /assets/teotfw-poster-web-779x1024.png
