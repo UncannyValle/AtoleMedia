@@ -1,8 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 import postImg from "../../images/GWTW.jpg"
+import { Link } from "gatsby"
+import Img from "gatsby-image"
 
-const TopPostWrapper = styled.div`
+const TopPostWrapper = styled(Link)`
   background: white;
   padding: 1.5rem;
   width: 32%;
@@ -10,17 +12,16 @@ const TopPostWrapper = styled.div`
     color: black;
   }
 `
-const Image = styled.img`
+const Image = styled(Img)`
   width: 100%;
+  height: 250px;
 `
-const TopPost = () => (
-  <TopPostWrapper>
-    <Image src={postImg} alt="GWTW" />
-    <h4>Frankly my dear, I do give a damn</h4>
-    <p>
-      A great movie with a glaring flaw. Scarlet O'Hara may be the most
-      frustrating character of all time but that ...
-    </p>
+const TopPost = props => (
+  <TopPostWrapper key={props.key} to={props.path}>
+    <Image fluid={props.image} />
+    <h4>{props.title}</h4>
+    <span>{props.date}</span>
+    <p>{props.description}</p>
   </TopPostWrapper>
 )
 export default TopPost

@@ -30,7 +30,6 @@ const Bio = styled.div`
 const Selfie = styled(Img)`
   width: 30%;
   border-radius: 50%;
-  z-index: -5;
   overflow: visible;
 `
 const AboutSection = () => {

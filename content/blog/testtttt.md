@@ -11,4 +11,4 @@ The first season demonstrated a world in which kids are not heard are misunderst
 
 Well, that was the first season. Season 2 gives us an epilogue that continues alongside the same path as the first season without doing it a disservice. My only gripe is that it makes the resolution, or lack thereof, of the first season feel empty.
 
-Anyways check out this show. I recommend it
+Anyways check out this show. I recommend it.
