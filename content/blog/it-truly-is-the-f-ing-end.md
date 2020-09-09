@@ -1,5 +1,5 @@
 ---
-path: the-end-of-the-world
+path: the-end-of-the-world2
 date: 2020-09-09T00:48:15.118Z
 title: It Truly is the F***ing End
 description: A review of the second season of The End of the F***ing World
