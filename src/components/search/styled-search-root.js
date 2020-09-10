@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export default styled.div`
   position: relative;
-  margin: 0.6em 0;
   color: #7ff2f8;
+  width: 33.333vw;
+  padding-right: 7rem
 `

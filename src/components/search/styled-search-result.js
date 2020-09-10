@@ -46,13 +46,5 @@ export default styled(SearchResult)`
     }
   }
 
-  .ais-PoweredBy {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 80%;
-
-    svg {
-      width: 70px;
-    }
-  }
+  
 `

@@ -1,17 +1,11 @@
 import algoliasearch from "algoliasearch/lite"
 import { createRef, default as React, useState } from "react"
 import { InstantSearch } from "react-instantsearch-dom"
-import { ThemeProvider } from "styled-components"
 import StyledSearchBox from "./styled-search-box"
 import StyledSearchResult from "./styled-search-result"
 import StyledSearchRoot from "./styled-search-root"
 import useClickOutside from "./use-click-outside"
 
-const theme = {
-  foreground: "#050505",
-  background: "white",
-  faded: "#888",
-}
 
 export default function Search({ indices }) {
   const rootRef = createRef()
@@ -25,7 +19,7 @@ export default function Search({ indices }) {
   useClickOutside(rootRef, () => setFocus(false))
 
   return (
-    <ThemeProvider theme={theme}>
+    
       <StyledSearchRoot ref={rootRef}>
         <InstantSearch
           searchClient={searchClient}
@@ -39,6 +33,6 @@ export default function Search({ indices }) {
           />
         </InstantSearch>
       </StyledSearchRoot>
-    </ThemeProvider>
+   
   )
 }

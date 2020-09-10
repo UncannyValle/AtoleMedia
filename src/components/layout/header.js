@@ -9,7 +9,7 @@ const searchIndices = [{ name: `Pages`, title: `Pages` }]
 const HeaderWrapper = styled.header`
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   width: 100vw;
   color: #7ff2f8;
@@ -22,14 +22,21 @@ const HeaderWrapper = styled.header`
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 45vw;
+    width: 35vw;
+    align-items: center;
   }
+
   .cup {
-    height: 5rem;
+    width: 33.33vw;
+    text-align: center;
+    img {
+      height: 5rem;
+    }
   }
 `
 const SearchBox = styled(Search)`
   background-color: red;
+  margin-right: 5rem;
 `
 const Header = () => (
   <HeaderWrapper>
@@ -39,20 +46,10 @@ const Header = () => (
       </li>
       <li>Store</li>
     </ul>
-    <Link to="/">
-      <img src={cup} alt="home logo" className="cup" />
+    <Link to="/" className="cup">
+      <img src={cup} alt="home logo" />
     </Link>
     <SearchBox indices={searchIndices} />
-
-    {/* <Search>
-      <input
-        type="search"
-        name="search-blog"
-        id="search-blog"
-        placeholder="Search Blogs"
-      />{" "}
-      <img src={lupa} alt="search icon" className="lupa" />
-    </Search> */}
   </HeaderWrapper>
 )
 

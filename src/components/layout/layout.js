@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle, ThemeProvider } from "styled-components"
 import styled from "styled-components"
 import Header from "./header"
 import reset from "styled-reset"
@@ -86,16 +86,21 @@ const Background = styled.img`
   overflow: hidden;
   z-index: -10;
 `
+const theme = {
+  foreground: "#7FF2F8",
+  background: "black",
+  faded: "#888",
+}
 const Layout = ({ children }) => {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Background src={lines} alt="background" />
       <Header />
 
       <main>{children}</main>
       <Footer />
-    </>
+    </ThemeProvider>
   )
 }
 
