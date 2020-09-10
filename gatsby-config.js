@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
     title: `Atole Media`,
@@ -74,6 +76,15 @@ module.exports = {
       options: {
         // Path to your Netlify CMS config file
         cmsConfig: `/static/admin/config.yml`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-algolia`,
+      options: {
+        appId: process.env.GATSBY_ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_ADMIN_KEY,
+        queries: require("./src/utils/algolia"),
+        chunkSize: 10000,
       },
     },
 
