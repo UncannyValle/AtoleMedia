@@ -42,9 +42,10 @@ export default styled(SearchResult)`
         h4 {
           margin-bottom: 0.2em;
         }
+        p {
+          color: white;
+        }
       }
     }
   }
-
-  
 `
