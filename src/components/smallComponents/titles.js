@@ -8,7 +8,10 @@ const TitleWrapper = styled.div`
   border-radius: 10px;
   h3 {
     color: black;
-    font-size:3rem
+    font-size: 3rem;
+  }
+  @media (max-width: 576px) {
+    width: 90vw;
   }
 `
 

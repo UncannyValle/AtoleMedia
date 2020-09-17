@@ -52,12 +52,19 @@ const ImageWrapper = styled(Link)`
       opacity: 0.55;
     }
   }
+  @media (max-width: 576px) {
+    width: 90%;
+    margin: 1rem 0;
+  }
 `
 
 const Genres = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+  @media (max-width: 576px) {
+    flex-wrap: wrap;
+  }
 `
 const Posts = styled.section``
 const Blog = () => {

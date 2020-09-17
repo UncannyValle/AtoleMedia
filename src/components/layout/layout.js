@@ -77,6 +77,20 @@ const GlobalStyle = createGlobalStyle`
    font-size: 20px;
    line-height:30px;
  }
+ @media (max-width: 576px) {
+    h1 {
+      font-size: 4.2rem;
+    }
+    h2 {
+      font-size: 3.1rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+  }
 `
 const Background = styled.img`
   width: 100vw;

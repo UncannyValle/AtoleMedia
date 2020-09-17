@@ -16,7 +16,6 @@ const Bio = styled.div`
   margin: 1.5rem 0;
   align-items: center;
   padding: 0 1rem;
-
   p {
     background-color: white;
     padding: 1rem;
@@ -28,6 +27,18 @@ const Bio = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  @media (max-width: 576px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ffffff4f;
+    padding: 1rem;
+    span {
+      max-width: 90vw;
+    }
+    p {
+      text-align: left;
+    }
   }
 `
 const Selfie = styled(Img)`

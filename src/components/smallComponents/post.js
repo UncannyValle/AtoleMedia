@@ -78,6 +78,15 @@ const PostWrapper = styled(Link)`
       padding: 1rem;
     }
   }
+  @media (max-width: 576px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ffffff4f;
+    padding: 1rem;
+    .text {
+      width: 90%;
+    }
+  } ;
 `
 const Post = props => (
   <PostWrapper key={props.key} to={`/blog/${props.path}`}>

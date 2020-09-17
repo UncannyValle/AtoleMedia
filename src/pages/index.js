@@ -14,6 +14,17 @@ const Text = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* @media (max-width: 576px) {
+    h1 {
+      font-size: 4.2rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+  } */
 `
 
 const IndexPage = () => (
