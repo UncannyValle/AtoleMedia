@@ -4,5 +4,5 @@ export default styled.div`
   position: relative;
   color: #7ff2f8;
   width: 33.333vw;
-  padding-right: 7rem
+ 
 `

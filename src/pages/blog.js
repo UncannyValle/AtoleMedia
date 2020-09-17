@@ -3,7 +3,7 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
 import Img from "gatsby-image"
-import { useStaticQuery, Link } from "gatsby"
+import { useStaticQuery, Link, graphql } from "gatsby"
 import Post from "../components/smallComponents/post"
 
 const ImageWrapper = styled(Link)`
@@ -17,13 +17,15 @@ const ImageWrapper = styled(Link)`
   }
   .hover-text {
     font-size: 3rem;
-    width: 300px;
+    width: 250px;
     bottom: 40%;
     position: absolute;
-    left: calc(50% - 150px);
+    left: calc(50% - 125px);
     visibility: hidden;
     opacity: 0;
     transition: all 200ms ease-in;
+    background-color: black;
+    border-radius: 20px;
   }
 
   &:hover .hover-text {
@@ -37,6 +39,18 @@ const ImageWrapper = styled(Link)`
   &:hover {
     cursor: pointer;
     box-shadow: 0 14px 28px #f26de4, 0 10px 10px #f26de4;
+  }
+  @media (max-width: 768px) {
+    .hover-text {
+      visibility: visible;
+      opacity: 1;
+      font-size: 3.5rem;
+      left: calc(50% - 125px);
+      width: 250px;
+    }
+    .image {
+      opacity: 0.55;
+    }
   }
 `
 

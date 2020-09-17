@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 
 const PostWrapper = styled(Link)`
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
   display: flex;
   justify-content: space-between;
   transition: all 200ms ease-in;
@@ -60,6 +60,23 @@ const PostWrapper = styled(Link)`
   }
   &:hover .title {
     box-shadow: 0 14px 28px #f26de4, 0 10px 10px #f26de4;
+  }
+  @media (max-width: 768px) {
+    .title {
+      padding: 1rem;
+      h3 {
+        font-size: 2rem;
+      }
+      h4 {
+        font-size: 1.5rem;
+      }
+    }
+    .text {
+      width: 50%;
+    }
+    .content {
+      padding: 1rem;
+    }
   }
 `
 const Post = props => (

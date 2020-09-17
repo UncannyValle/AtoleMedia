@@ -16,6 +16,10 @@ const Popover = css`
   padding: 1em;
   border-radius: 2px;
   background: ${({ theme }) => theme.background};
+  @media (max-width: 576px) {
+    width: 100vw;
+    margin-top: 0.75em;
+  }
 `
 
 export default styled(SearchResult)`
@@ -46,6 +50,11 @@ export default styled(SearchResult)`
           color: white;
         }
       }
+    }
+  }
+  @media (max-width: 576px) {
+   .Hits ul {
+      width: 100%;
     }
   }
 `

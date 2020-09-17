@@ -14,6 +14,9 @@ const Bio = styled.div`
   width: 100%;
   justify-content: space-evenly;
   margin: 1.5rem 0;
+  align-items: center;
+  padding: 0 1rem;
+
   p {
     background-color: white;
     padding: 1rem;
@@ -21,16 +24,18 @@ const Bio = styled.div`
     margin: 1rem 0;
   }
   span {
-    width: 60%;
+    max-width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 `
 const Selfie = styled(Img)`
-  width: 30%;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
   overflow: visible;
+  padding: 0 0.5rem;
 `
 const AboutSection = () => {
   const data = useStaticQuery(graphql`

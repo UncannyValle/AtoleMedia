@@ -31,6 +31,14 @@ const PostWrapper = styled.div`
     margin: 0 auto;
     padding-bottom: 2rem;
   }
+  @media (max-width: 768px) {
+    .post-title {
+      width: 90%;
+    }
+    .content {
+      width: 80%;
+    }
+  }
 `
 const BlogPost = ({ data }) => {
   const post = data.markdownRemark
@@ -52,7 +60,6 @@ const BlogPost = ({ data }) => {
           className="content"
           dangerouslySetInnerHTML={{ __html: post.html }}
         ></div>
-      
       </PostWrapper>
     </Layout>
   )

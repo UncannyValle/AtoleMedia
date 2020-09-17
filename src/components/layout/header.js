@@ -2,8 +2,9 @@ import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import cup from "../../images/home-icon.png"
-// import lupa from "../../images/Icon material-search@2x.png"
 import Search from "../search"
+import NavBig from "./navBig"
+import NavSmall from "./navSmall"
 const searchIndices = [{ name: `Pages`, title: `Pages` }]
 
 const HeaderWrapper = styled.header`
@@ -17,7 +18,7 @@ const HeaderWrapper = styled.header`
   position: fixed;
   background-color: #3b2d60;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   ul {
     display: flex;
     flex-direction: row;
@@ -34,22 +35,15 @@ const HeaderWrapper = styled.header`
     }
   }
 `
-const SearchBox = styled(Search)`
-  background-color: red;
-  margin-right: 5rem;
-`
+
 const Header = () => (
   <HeaderWrapper>
-    <ul>
-      <li>
-        <Link to="/blog">Blog</Link>
-      </li>
-      <li>Store</li>
-    </ul>
+    <NavBig />
+    <NavSmall />
     <Link to="/" className="cup">
       <img src={cup} alt="home logo" />
     </Link>
-    <SearchBox indices={searchIndices} />
+    <Search indices={searchIndices} />
   </HeaderWrapper>
 )
 
