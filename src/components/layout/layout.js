@@ -40,24 +40,24 @@ const GlobalStyle = createGlobalStyle`
   h1{
     font-family: continuo, sans-serif;
     font-size: 7rem;
-     color: #7FF2F8;
+     color: #fbc0ff;
 
   }
   h2{
     font-family: continuo, sans-serif;
     font-size: 5rem;
-    color: #7FF2F8;
+    color: #fbc0ff;
   }
   h3{
      font-family: pinecone-mvb, sans-serif;
      font-size: 2.5rem;
-     color: #7FF2F8;
+     color: #7faaf8;
 
   }
   h4 {
     font-family: pinecone-mvb, sans-serif;
     font-size: 1.5rem;
-    color: #7FF2F8;
+    color: #28ebff;
 
   }
   a {
@@ -79,16 +79,16 @@ const GlobalStyle = createGlobalStyle`
  }
  @media (max-width: 576px) {
     h1 {
-      font-size: 4.2rem;
+      font-size: 5.5rem;
     }
     h2 {
-      font-size: 3.1rem;
+      font-size: 3rem;
     }
     h3 {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
     h4 {
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
   }
 `

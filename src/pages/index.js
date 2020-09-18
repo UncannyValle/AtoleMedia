@@ -1,5 +1,4 @@
 import React from "react"
-// import { Link } from "gatsby"
 
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
@@ -14,17 +13,11 @@ const Text = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* @media (max-width: 576px) {
-    h1 {
-      font-size: 4.2rem;
-    }
-    h3 {
-      font-size: 1.5rem;
-    }
-    h4 {
-      font-size: 1rem;
-    }
-  } */
+  
+  h4 {
+    width: 50%;
+    margin-top: 2rem;
+  }
 `
 
 const IndexPage = () => (
